@@ -6,9 +6,9 @@ Add banner functionality to your store.
 ### Download the plugin via composer
 
 ```bash
-composer require albertirse/banner-plugin
+composer require albertirse/sylius-banner-plugin
  or
-composer require albertirse/banner-plugin:dev-master
+composer require albertirse/sylius-banner-plugin:dev-master
 ```
 
 ### Enable the plugin
@@ -26,7 +26,7 @@ return [
 ### Configure the plugin
 
 ```bash
-composer run-script post-install-cmd -d ./vendor/albertirse/banner-plugin
+composer run-script post-install-cmd -d ./vendor/albertirse/sylius-banner-plugin
 ```
 
 ### Update your database
@@ -55,9 +55,9 @@ $ bin/console cache:clear
 ### Remove plugin
 
 ```bash
-composer run-script remove-cmd -d ./vendor/albertirse/banner-plugin
+composer run-script remove-cmd -d ./vendor/albertirse/sylius-banner-plugin
 
-composer remove albertirse/banner-plugin
+composer remove albertirse/sylius-banner-plugin
 ```
 
 

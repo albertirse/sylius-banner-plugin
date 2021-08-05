@@ -1,5 +1,5 @@
 {
-    "name": "albertirse/banner-plugin",
+    "name": "albertirse/sylius-banner-plugin",
     "type": "sylius-plugin",
     "keywords": ["sylius", "sylius-plugin"],
     "description": "Plugin allowing to create banners in Sylius.",
