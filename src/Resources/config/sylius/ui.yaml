@@ -1,0 +1,7 @@
+sylius_ui:
+    events:
+        sylius.admin.layout.javascripts:
+            blocks:
+                albertirse_sylius_banner_scripts:
+                    template: "@AlbertirseSyliusBannerPlugin/admin/_scripts.html.twig"
+                    priority: -10

@@ -1,0 +1,12 @@
+{
+    "bundles": {
+        "Albertirse\\SyliusBannerPlugin\\AlbertirseSyliusBannerPlugin": [
+            "all"
+        ]
+    },
+    "copy-from-recipe": {
+        "config/": "%CONFIG_DIR%/",
+        "src/Resources/views/banner/homepage/_my_banner.html.twig": "templates/homepage/_my_banner.html.twig"
+       
+    }
+}

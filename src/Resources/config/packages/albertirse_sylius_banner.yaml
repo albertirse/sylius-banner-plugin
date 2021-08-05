@@ -1,0 +1,10 @@
+imports:
+    - { resource: "@AlbertirseSyliusBannerPlugin/Resources/config/config.yaml" }
+
+sylius_ui:
+    events:
+        sylius.shop.homepage:
+            blocks:
+                albertirse_banner:
+                    template: "homepage/_my_banner.html.twig"
+                    priority: 100    

@@ -1,0 +1,12 @@
+sylius_resource:
+    resources:
+        albertirse_sylius_banner.banner:
+            classes:
+                model: Albertirse\SyliusBannerPlugin\Entity\Banner
+                form: Albertirse\SyliusBannerPlugin\Form\Type\BannerType
+                repository: Albertirse\SyliusBannerPlugin\Repository\BannerRepository
+
+        albertirse_sylius_banner.banner_image:
+            classes:
+                model: Albertirse\SyliusBannerPlugin\Entity\BannerImage
+                form: Albertirse\SyliusBannerPlugin\Form\Type\BannerImageType

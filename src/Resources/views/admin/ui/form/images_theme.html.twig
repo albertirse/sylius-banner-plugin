@@ -1,0 +1,7 @@
+{% extends '@SyliusUi/Form/imagesTheme.html.twig' %}
+
+{% block albertirse_sylius_banner_image_widget %}
+    {{ block('sylius_taxon_image_widget') }}
+     {{ form_row(form.title) }}
+    {{ form_row(form.description) }}
+{% endblock %}

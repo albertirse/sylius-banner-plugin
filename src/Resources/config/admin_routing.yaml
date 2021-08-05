@@ -1,0 +1,15 @@
+albertirse_banner_admin_banner1:
+    resource: |
+        alias: albertirse_sylius_banner.banner
+        section: admin
+        templates: "@SyliusAdmin/Crud"
+        redirect: update
+        grid: albertirse_sylius_banner_admin_banner
+        vars:
+            all:
+                subheader: albertirse_sylius_banner.ui.manage_banners
+                templates:
+                    form: '@AlbertirseSyliusBannerPlugin/admin/banner/_form.html.twig'
+            index:
+                icon: 'file image outline'
+    type: sylius.resource

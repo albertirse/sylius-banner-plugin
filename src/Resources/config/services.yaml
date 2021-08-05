@@ -1,0 +1,24 @@
+services:
+    albertirse_sylius_banner.listener.admin.menu_builder:
+        class: Albertirse\SyliusBannerPlugin\Menu\AdminMenuListener
+        tags:
+            - { name: kernel.event_listener, event: sylius.menu.admin.main, method: addAdminMenuItems }
+
+    albertirse_sylius_banner.form.type.banner:
+        class: Albertirse\SyliusBannerPlugin\Form\Type\BannerType
+        arguments: [Albertirse\SyliusBannerPlugin\Entity\Banner]
+        tags:
+            - { name: form.type }
+
+    albertirse_sylius_banner.form.type.banner_image:
+        class: Albertirse\SyliusBannerPlugin\Form\Type\BannerImageType
+        arguments: [Albertirse\SyliusBannerPlugin\Entity\BannerImage]
+        tags:
+            - { name: form.type }
+
+    albertirse_sylius_banner.listener.images_upload:
+        class: Sylius\Bundle\CoreBundle\EventListener\ImagesUploadListener
+        autowire: true
+        tags:
+            - { name: kernel.event_listener, event: albertirse_sylius_banner.banner.pre_create, method: uploadImages }
+            - { name: kernel.event_listener, event: albertirse_sylius_banner.banner.pre_update, method: uploadImages }

@@ -1,0 +1,6 @@
+albertirse_sylius_baner_admin:
+    resource: "@AlbertirseSyliusBannerPlugin/Resources/config/admin_routing.yaml"
+    prefix: /admin
+
+albertirse_sylius_banner_shop:
+    resource: "@AlbertirseSyliusBannerPlugin/Resources/config/shop_routing.yaml"    

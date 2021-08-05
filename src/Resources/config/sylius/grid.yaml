@@ -1,0 +1,31 @@
+sylius_grid:
+    grids:
+        albertirse_sylius_banner_admin_banner:
+            driver:
+                options:
+                    class: Albertirse\SyliusBannerPlugin\Entity\Banner
+            sorting:
+                code: asc
+            fields:
+                code:
+                    type: string
+                    label: sylius.ui.code
+                    sortable: ~
+                name:
+                    type: string
+                    label: sylius.ui.name
+                    sortable: ~
+    
+            filters:
+                code:
+                    type: string
+                    label: sylius.ui.code
+            actions:
+                main:
+                    create:
+                        type: create
+                item:
+                    update:
+                        type: update
+                    delete:
+                        type: delete

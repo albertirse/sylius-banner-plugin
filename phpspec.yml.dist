@@ -1,0 +1,4 @@
+suites:
+    main:
+        namespace: Albertirse\SyliusBannerPlugin
+        psr4_prefix: Albertirse\SyliusBannerPlugin
