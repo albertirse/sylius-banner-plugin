@@ -5,7 +5,7 @@
     "description": "Plugin allowing to create banners in Sylius.",
     "license": "MIT",
     "require": {
-        "php": "^7.3",
+        "php": "^7.3|| ^8.0 || ^8.1",
         "sylius/sylius": "~1.8.0 || ~1.10 || ~1.11"
     },
     "require-dev": {
