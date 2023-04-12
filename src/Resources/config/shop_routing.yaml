@@ -2,7 +2,7 @@ albertirse_sylius_banner_by_code:
     path: /banner-by-code/{code}
     methods: [GET]
     defaults:
-        _controller: albertirse_sylius_banner.controller.banner:showAction
+        _controller: albertirse_sylius_banner.controller.banner::showAction
         _sylius:
             template: $template
             repository:
